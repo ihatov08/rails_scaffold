@@ -28,8 +28,7 @@ test:
 production:
   adapter: mysql2
   encoding: utf8
-  database: tabe
+  database: rails_scaffold_production
   port: 3306
-  username: vagrant
-  password: vagrant
+  username: root
   host: localhost
