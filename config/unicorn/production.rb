@@ -1,4 +1,4 @@
-@app_path = '/home/tomoya/rails'
+@app_path = '/home/tomoya/rails/rails_scaffold'
 working_directory @app_path + "/current"
 $app_dir = "/home/tomoya/rails/rails_scaffold" #worker_processes Integer(ENV["WEB_CONCURRENCY"] || 3)
 preload_app true
