@@ -19,6 +19,9 @@ set :rbenv_type, :user # :system or :user
 set :rbenv_ruby, '2.3.0'
 set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)}/bin/rbenv exec"
 set :rbenv_roles, :all # default value
+set :default_env, {
+    SECRET_KEY_BASE: ENV["SECRET_KEY_BASE"]
+}
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
